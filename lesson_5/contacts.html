@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <ul class="menu">
+            <li><a href="index.html">Перейти на главную</a></li>
+            <li><a href="catalog/index.html">Перейти в каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+
+    <h1>Контакты</h1>
+    <p>
+        <h3>Оставьте Ваши контакты, наш менеджер свяжется с Вами в ближайший час!</h3>
+    </p>
+
+
+    <form action="#">
+        Как вас зовут <input type="text" name="fio" id="fio" placeholder="Ваше имя" class="inp-text"><br>
+        Предпочитаемый вид связи<br>
+        <input type="radio" name="contact_type" value="phone">Телефон<br>
+        <input type="radio" name="contact_type" value="email">Электронная почта<br>
+        Контакт: <input type="text" name="contact" id="contact" placeholder="Введите телефон или email"
+            class="inp-text"><br>
+        <input type="submit" value="Отправить"> <input type="reset" value="Очистить">
+    </form>
+
+    <hr>
+    <h1>Москва, ГУМ</h1>
+    <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab887233a50f53f162493413f3ec71eafc427870d0c5e4662c92ec1f68ff18c1c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+
+    <hr>
+    <div class="footer">
+        <p class="copyrights"><a href="https://geekbrains.ru/" target="_blank">Geekbrains</a>. Все права защищены
+            &copy;&nbsp;2019</p>
+    </div>
+</body>
+
+</html>
