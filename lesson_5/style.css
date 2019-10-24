@@ -24,17 +24,52 @@ h3 {
     font-weight: 400;
 }
 
+.container {
+    width: 80%;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer {
+    height: 200px;
+    background-color: darkolivegreen;
+    position: relative;
+}
+
+.copyrights {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
 
 /************ Main menu ************/
 
+div.header {
+    height: 100px;
+    background-color: #ccc;
+}
+
+.logo {
+    float: left;
+    background-color: darkcyan;
+    height: 100px;
+    width: 100px;
+}
+
+div.menu {
+   /* background-color: #ccc;*/
+
+    float: right;
+}
+
 .menu li {
-    display: inline-block;            /* Размещение в линию */
-    margin-left: 0px;           /* Отступ слева */
-    margin-right: 0px;          /* Отступ справа */
-    border: 1px solid #000;   /* Рамка вокруг текста */
-    padding: 3px;               /* Поля вокруг текста */
-    list-style-type: none;      /* Убрать точки для списка */
-    width: 300px;
+    display: inline-block;      /* Размещение в линию */
+  /*  margin-left: 0px;           /* Отступ слева */
+/*    margin-right: 0px;          /* Отступ справа */
+  /*  border: 1px solid #000;   /* Рамка вокруг текста */
+ /*   padding: 3px;               /* Поля вокруг текста */
+ /*   list-style-type: none;      /* Убрать точки для списка */
+    width: 150px;
 }
 
 .menu li a {
@@ -43,7 +78,7 @@ h3 {
     text-decoration: none;      /* Не подчеркивать ссылку */
 }
 
-.menu li:hover{
+/*.menu li:hover{
     border: 1px solid lightslategrey;
 }
 
@@ -69,6 +104,7 @@ h3 {
     color: lightsteelblue;
 }
 
+
 .menu li:first-child{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -78,8 +114,13 @@ h3 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+*/
 
 /************ Phone page ************/
+
+.phone-pic {
+    float: left;
+}
 
 .phone-name {
     color: black;
@@ -121,6 +162,14 @@ h3 {
 
 /************ Phone page haracteristics list  ************/
 
+.haracteristics {
+    clear: both;
+}
+
+.short-description {
+    overflow: hidden;
+}
+
 .haracteristics-ul {
     list-style-type: circle;
 }
@@ -151,6 +200,43 @@ input[type="text"]:focus {
 
 /************ Catalog page ************/
 
+.stories-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.story {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 26px;
+    box-shadow: 10px 10px 30px #CCC;
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+
+.story__subtitle {
+    padding: 3px 10px;
+    background-color: #FFF;
+    color: #000;
+}
+
+div.catalog ol li {
+    display: inline;
+}
+
 .catalog ol li a img:hover {
    /* border: 5px solid red; */
     outline: lightslategrey solid 3px;
@@ -161,19 +247,3 @@ input[type="text"]:focus {
      outline: lightsteelblue solid 3px;
  }
 
- /************ Test table ************/
-
-.test table {
-    border: 1px solid blueviolet;
-}
-
-.test table tr td {
-    border: 1px solid blueviolet;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-}
-
-.test table tr:first-child {
-    height: 100px;
-}
