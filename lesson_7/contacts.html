@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Contacts</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="menu">
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog/index.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Быстрый выбор
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="index.html">Главная</a>
+                        <a class="dropdown-item" href="catalog/index.html">Каталог</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="catalog/n3310.html">Nokia 3310</a>
+                        <a class="dropdown-item" href="catalog/n3310new.html">Nokia 3310 NEW</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item active" href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--/header-->
+
+
+        <div class="body">
+            <h1>Контакты</h1>
+            <p>
+                <h4>Оставьте Ваши контакты, наш менеджер свяжется с Вами в ближайший час!</h4>
+            </p>
+
+
+            <form action="#">
+                <h5>Как вас зовут</h5>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Имя и Фамилия</span>
+                    </div>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+
+                <h5>Предпочитаемый вид связи</h5>
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" aria-label="Radio button for following text input" name="contact_type"
+                                value="phone">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" value="Телефон">
+                </div>
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" aria-label="Radio button for following text input" name="contact_type"
+                                value="email">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox"
+                        value="Электронная почта">
+                </div>
+
+                <h5>Контакт:</h5>
+
+                <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Введите Ваш контакт" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Отправить</button>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="reset" id="button-addon1">Очистить</button>
+                    </div>
+                </div>
+
+
+            </form>
+
+
+            <h1>Москва, ГУМ</h1>
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab887233a50f53f162493413f3ec71eafc427870d0c5e4662c92ec1f68ff18c1c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+
+        </div>
+        <!--/body-->
+
+        <div class="clr"></div>
+    </div>
+    <!--/container-->
+
+
+    <div class="footer">
+        <p class="copyrights"><a href="https://geekbrains.ru/" target="_blank">Geekbrains</a>. Все права защищены
+            &copy;&nbsp;2019</p>
+    </div>
+    <!--/footer-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

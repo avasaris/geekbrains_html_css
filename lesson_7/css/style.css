@@ -1,0 +1,268 @@
+/************ Normalize ************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/************ Global ************/
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    background-color: #f8f8f8;
+    font-family: cursive;
+}
+
+a {
+    color: rgb(56, 58, 44);
+}
+
+a:hover {
+    color: lightslategrey;
+}
+
+a:active{
+    color: lightsteelblue;
+}
+
+h3 {
+    background-color: #eaeaea;
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 600px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.footer {
+    height: 200px;
+    background-color: darkolivegreen;
+    position: relative;
+    max-width: 1200px;
+    min-width: 600px;
+    margin: -200px auto 0px;
+}
+
+.clr {
+    height: 200px;
+}
+
+.copyrights {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+/************ Main menu ************/
+
+div.header {
+    min-height: 100px;
+    background-color: #ccc;
+}
+
+.logo {
+    float: left;
+    background-color: darkcyan;
+    height: 100px;
+    width: 100px;
+}
+
+div.menu {
+   /* background-color: #ccc;*/
+
+    float: right;
+}
+
+.menu li {
+    display: inline-block;      /* Размещение в линию */
+  /*  margin-left: 0px;           /* Отступ слева */
+/*    margin-right: 0px;          /* Отступ справа */
+  /*  border: 1px solid #000;   /* Рамка вокруг текста */
+ /*   padding: 3px;               /* Поля вокруг текста */
+ /*   list-style-type: none;      /* Убрать точки для списка */
+    width: 150px;
+}
+
+.menu li a {
+    font-size: 1.5em;
+    font-style: italic;
+    text-decoration: none;      /* Не подчеркивать ссылку */
+}
+
+/*.menu li:hover{
+    border: 1px solid lightslategrey;
+}
+
+.menu li:hover:after {
+    content: "...";
+    color: lightslategrey;
+}
+
+.menu li:active:after {
+    content: "...";
+    color: lightsteelblue;
+}
+
+.menu li:active{
+    border: 1px solid lightsteelblue;
+}
+
+.menu li:hover a{
+    color: lightslategrey;
+}
+
+.menu li:active a{
+    color: lightsteelblue;
+}
+
+
+.menu li:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menu li:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+*/
+
+/************ Phone page ************/
+
+.phone-pic {
+    float: left;
+}
+
+.phone-name {
+    color: black;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.short-description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.full-description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.marks table {
+    border: 0px solid black;
+    width: 80%;
+    height: 400px;
+}
+
+.marks table td {
+    border: 0px solid black;
+    background-color: rgb(187, 164, 135);
+}
+
+.marks table td:nth-child(1), .marks table td:nth-child(2), .marks table td:nth-child(3) {
+    width: 100px;
+    text-align: center;
+}
+
+/************ Phone page haracteristics list  ************/
+
+.haracteristics {
+    clear: both;
+}
+
+.short-description {
+    overflow: hidden;
+}
+
+.haracteristics-ul {
+    list-style-type: circle;
+}
+
+.haracteristics-ul li::first-letter {
+    font-size: 20px;
+    color: brown;
+    text-transform: capitalize;
+}
+
+/************ Contact page Input form  ************/
+
+input[type="text"] {
+    width: 15em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #f8f8f8;
+}
+
+input[type="text"]#fio {
+    text-transform: capitalize;
+}
+
+input[type="text"]:focus {
+    background-color: white;
+}
+
+/************ Catalog page ************/
+
+.stories-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.story {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 26px;
+    box-shadow: 10px 10px 30px #CCC;
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+
+.story__subtitle {
+    padding: 3px 10px;
+    background-color: #FFF;
+    color: #000;
+}
+
+div.catalog ol li {
+    display: inline;
+}
+
+.catalog ol li a img:hover {
+   /* border: 5px solid red; */
+    outline: lightslategrey solid 3px;
+}
+
+.catalog ol li a img:active {
+    /* border: 5px solid red; */
+     outline: lightsteelblue solid 3px;
+ }
+
